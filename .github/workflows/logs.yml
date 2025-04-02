@@ -29,8 +29,8 @@ jobs:
 
       - name: Setup SSH Key
         run: |
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > mykey-site.pem
-          chmod 600 mykey-site.pem
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > mykey-web.pem
+          chmod 600 mykey-web.pem
 
       - name: Fetch and upload logs
         run: python log_upload.py

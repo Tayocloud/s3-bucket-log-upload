@@ -1,3 +1,4 @@
+
 import paramiko
 import boto3
 import os
@@ -18,7 +19,7 @@ os.makedirs(log_directory, exist_ok=True)
 bucket_name = "mys3log-python"
 s3_client = boto3.client("s3")
 
-def log_upload(server):
+def fetch_logs(server):
     server_ip = server["ip"]
     user_name = server["user"]
     local_path = f"{log_directory}/{server_ip}_access.log"
