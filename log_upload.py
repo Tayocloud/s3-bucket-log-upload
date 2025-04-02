@@ -1,5 +1,3 @@
-python
-CopyEdit
 import paramiko
 import boto3
 import os
