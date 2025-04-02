@@ -15,7 +15,7 @@ log_directory = "./logfiles"
 os.makedirs(log_directory, exist_ok=True)
 
 # S3 Bucket details
-bucket_name = "mypy-storage"
+bucket_name = "mys3log-python"
 s3_client = boto3.client("s3")
 
 def log_upload(server):
