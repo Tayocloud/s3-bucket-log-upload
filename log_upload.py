@@ -18,7 +18,7 @@ os.makedirs(log_directory, exist_ok=True)
 bucket_name = "mypy-storage"
 s3_client = boto3.client("s3")
 
-def fetch_logs(server):
+def log_upload(server):
     server_ip = server["ip"]
     user_name = server["user"]
     local_path = f"{log_directory}/{server_ip}_access.log"
