@@ -1,5 +1,3 @@
-yaml
-CopyEdit
 name: Automate Server Logs
 
 on:
@@ -8,7 +6,7 @@ on:
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
-  fetch_logs:
+  log_upload:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
